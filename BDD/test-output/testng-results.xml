@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21540" started-at="2022-07-27T15:52:31 IST" finished-at="2022-07-27T15:52:52 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.Runner@52f759d7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="21540" started-at="2022-07-27T15:52:31 IST" finished-at="2022-07-27T15:52:52 IST">
+      <class name="runners.Runner">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.Runner@52f759d7]" name="setUpClass" is-config="true" duration-ms="493" started-at="2022-07-27T15:52:31 IST" finished-at="2022-07-27T15:52:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@58a4a74d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.Runner@52f759d7]" name="runScenario" duration-ms="9100" started-at="2022-07-27T15:52:31 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-27T15:52:40 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login to Vtiger using Valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.Runner@52f759d7]" name="runScenario" duration-ms="11751" started-at="2022-07-27T15:52:40 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-27T15:52:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login to Vtiger using Valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-42M7L50', ip: '192.168.43.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Shadab\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56789}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 752631b6fa64c0945c4f3fd0584e6b74]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-42M7L50', ip: '192.168.43.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Shadab\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56789}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 752631b6fa64c0945c4f3fd0584e6b74
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+at stepdefinitions.LoginStepDefinition.homepage_should_be_displayed_with_organization_icon(LoginStepDefinition.java:83)
+at ✽.Homepage should be displayed with Organization icon(file:///C:/Users/Shadab/Workspace1/BDD/./src/test/java/features/Login.feature:30)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.Runner@52f759d7]" name="tearDownClass" is-config="true" duration-ms="148" started-at="2022-07-27T15:52:52 IST" finished-at="2022-07-27T15:52:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.Runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
