@@ -2,6 +2,7 @@
 Feature: Login feature
 #Author: Md Shadab Asim
 #Created Date: 26-07-22
+#Rectified
  Background:
 Given launch the "<browser>"
 And Enter url "http://localhost:8888"
